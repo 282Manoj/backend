@@ -1,0 +1,26 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "content": "new Product"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "name-1"
+        },
+        {
+            "id": 1,
+            "name": "name-1"
+        },
+        {
+            "id": 1,
+            "name": "name-1"
+        },
+        {
+            "id": 1,
+            "name": "name-1"
+        }
+    ]
+}

@@ -6,7 +6,8 @@ import { login } from "../redux/auth/auth.action";
 
 const Login = () => {
   const isAuth =useSelector((store)=>store.auth.isAuth);
-  const {state} = useLocation();
+  // const {state} = useLocation();
+  // console.log(state);
   const navigate =useNavigate();
   const [loginCreds, setLoginCreds] = useState({});
   const dispatch = useDispatch();
@@ -26,13 +27,13 @@ const Login = () => {
  
   useEffect(()=>{
     if(isAuth){
-      if(state.from){
-        navigate(state.from,{replace:true})
-      }
-      else{
-        navigate("/")
-      }
+      
+        navigate("/posts")
     }
+      else{
+        navigate("/login")
+      }
+    
   },[isAuth]);
 
   return (

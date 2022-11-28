@@ -14,7 +14,7 @@ return (
     <h1>Post</h1>
     {posts.map((post) => (
       <ul key={post.id}>
-        <li>{post.message}</li>
+        <img style={{width:"200px",height:"200px"}} src={post.message}/>
       </ul>
     ))}
   </div>

@@ -5,7 +5,8 @@ import { useSelector } from "react-redux";
 const RequireAuth = ({ children }) => {
   const  isAuth = useSelector((store)=>store.auth.isAuth);
 
-  const { pathname } = useLocation();
+  const {pathname}= useLocation();
+  // console.log(pathname);
 
   if (isAuth) {
     return children;
